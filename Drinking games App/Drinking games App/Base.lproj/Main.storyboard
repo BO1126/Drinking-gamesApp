@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LP0-fj-8OU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--2인용-->
+        <scene sceneID="HbE-hv-WJd">
+            <objects>
+                <viewController id="HBd-bh-TR2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fr4-NX-P3h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7g-d0-Ydm">
+                                <rect key="frame" x="155" y="685" width="104" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="엄지게임"/>
+                                <connections>
+                                    <segue destination="GG6-0k-RDM" kind="presentation" modalPresentationStyle="fullScreen" id="7Od-m1-Y4j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BFf-1C-lHC"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="K7g-d0-Ydm" firstAttribute="centerX" secondItem="fr4-NX-P3h" secondAttribute="centerX" id="FTc-bR-qp2"/>
+                            <constraint firstItem="BFf-1C-lHC" firstAttribute="bottom" secondItem="K7g-d0-Ydm" secondAttribute="bottom" constant="80" id="R6C-EC-36a"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="2인용" image="person.2.fill" catalog="system" id="p8P-pp-Qhg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dp5-2e-iwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="362"/>
+        </scene>
+        <!--Finger Game View Controller-->
+        <scene sceneID="BXI-m1-pCV">
+            <objects>
+                <viewController id="GG6-0k-RDM" customClass="fingerGameViewController" customModule="Drinking_games_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LIf-WH-Nhq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJp-jC-2pk">
+                                <rect key="frame" x="40" y="741" width="94" height="91"/>
+                                <color key="tintColor" red="1" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="circle.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2au-6M-YmM">
+                                <rect key="frame" x="280" y="741" width="94" height="91"/>
+                                <color key="tintColor" red="0.0" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-My-GiX">
+                                <rect key="frame" x="189.5" y="64" width="35" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="중단"/>
+                                <connections>
+                                    <action selector="stopGameAction" destination="GG6-0k-RDM" eventType="touchUpInside" id="8Gr-0u-85I"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-Qk-IZQ">
+                                <rect key="frame" x="38" y="294" width="338" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" red="0.5" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZsI-Le-TQI"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="9yS-My-GiX" firstAttribute="top" secondItem="ZsI-Le-TQI" secondAttribute="top" constant="20" id="9e5-ye-Vrk"/>
+                            <constraint firstItem="E3F-Qk-IZQ" firstAttribute="leading" secondItem="ZsI-Le-TQI" secondAttribute="leading" constant="40" id="Dqb-95-re5"/>
+                            <constraint firstItem="ZsI-Le-TQI" firstAttribute="trailing" secondItem="2au-6M-YmM" secondAttribute="trailing" constant="40" id="DxA-A2-mdf"/>
+                            <constraint firstItem="E3F-Qk-IZQ" firstAttribute="top" secondItem="ZsI-Le-TQI" secondAttribute="top" constant="250" id="FCt-ef-hTG"/>
+                            <constraint firstItem="ZsI-Le-TQI" firstAttribute="trailing" secondItem="E3F-Qk-IZQ" secondAttribute="trailing" constant="40" id="VYR-Hs-onC"/>
+                            <constraint firstItem="RJp-jC-2pk" firstAttribute="leading" secondItem="ZsI-Le-TQI" secondAttribute="leading" constant="40" id="d3D-Hn-Kkm"/>
+                            <constraint firstItem="ZsI-Le-TQI" firstAttribute="bottom" secondItem="RJp-jC-2pk" secondAttribute="bottom" constant="30" id="jw8-YW-dpk"/>
+                            <constraint firstItem="9yS-My-GiX" firstAttribute="centerX" secondItem="LIf-WH-Nhq" secondAttribute="centerX" id="pI1-xv-js7"/>
+                            <constraint firstItem="ZsI-Le-TQI" firstAttribute="bottom" secondItem="2au-6M-YmM" secondAttribute="bottom" constant="30" id="prq-sh-V7H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="g6d-ef-DRA"/>
+                    <connections>
+                        <outlet property="playerOneFingerButton" destination="RJp-jC-2pk" id="1TC-FO-GMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U29-yn-5nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392.753623188406" y="361.60714285714283"/>
+        </scene>
+        <!--다인용-->
+        <scene sceneID="P4N-zv-QeJ">
+            <objects>
+                <viewController id="Jt0-R1-HvE" customClass="ViewController" customModule="Drinking_games_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jn0-7l-yAB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMH-n4-3jP">
+                                <rect key="frame" x="162.5" y="685" width="89" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="START"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uqL-8a-kM6"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nMH-n4-3jP" firstAttribute="centerX" secondItem="jn0-7l-yAB" secondAttribute="centerX" id="lTJ-Rh-IHB"/>
+                            <constraint firstItem="uqL-8a-kM6" firstAttribute="bottom" secondItem="nMH-n4-3jP" secondAttribute="bottom" constant="80" id="ryI-Fa-38s"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="다인용" image="person.3.fill" catalog="system" id="2bg-PI-0KA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc0-si-vGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="-306"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hos-cP-8JY">
+            <objects>
+                <tabBarController id="LP0-fj-8OU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kPz-FW-ScD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.52524447278911568" green="0.33006483843537415" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Jt0-R1-HvE" kind="relationship" relationship="viewControllers" id="Cdw-iT-1fJ"/>
+                        <segue destination="HBd-bh-TR2" kind="relationship" relationship="viewControllers" id="Tlc-WU-M8N"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HLE-sq-zMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365" y="-4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
