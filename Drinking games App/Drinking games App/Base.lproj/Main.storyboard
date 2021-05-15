@@ -26,7 +26,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BFf-1C-lHC"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="K7g-d0-Ydm" firstAttribute="centerX" secondItem="fr4-NX-P3h" secondAttribute="centerX" id="FTc-bR-qp2"/>
                             <constraint firstItem="BFf-1C-lHC" firstAttribute="bottom" secondItem="K7g-d0-Ydm" secondAttribute="bottom" constant="80" id="R6C-EC-36a"/>
@@ -53,6 +53,9 @@
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpInsideP1Button" destination="GG6-0k-RDM" eventType="touchUpInside" id="9hk-O5-DPt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2au-6M-YmM">
                                 <rect key="frame" x="280" y="741" width="94" height="91"/>
@@ -60,6 +63,9 @@
                                 <state key="normal" image="circle.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="80"/>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpInsideP2Button" destination="GG6-0k-RDM" eventType="touchUpInside" id="kN2-id-BBx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-My-GiX">
                                 <rect key="frame" x="189.5" y="64" width="35" height="36"/>
@@ -73,11 +79,14 @@
                                 <rect key="frame" x="38" y="294" width="338" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.0" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="thumbTintColor" red="0.5" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" red="0.68869579081632648" green="0.82671662414965985" blue="0.58832908163265307" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="didSliderValueChanged:" destination="GG6-0k-RDM" eventType="valueChanged" id="Vv2-OS-0Zi"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZsI-Le-TQI"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9yS-My-GiX" firstAttribute="top" secondItem="ZsI-Le-TQI" secondAttribute="top" constant="20" id="9e5-ye-Vrk"/>
                             <constraint firstItem="E3F-Qk-IZQ" firstAttribute="leading" secondItem="ZsI-Le-TQI" secondAttribute="leading" constant="40" id="Dqb-95-re5"/>
@@ -92,7 +101,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="g6d-ef-DRA"/>
                     <connections>
+                        <outlet property="fingerGameSlider" destination="E3F-Qk-IZQ" id="6Nu-dK-jBN"/>
                         <outlet property="playerOneFingerButton" destination="RJp-jC-2pk" id="1TC-FO-GMa"/>
+                        <outlet property="playerTwoFingerButton" destination="2au-6M-YmM" id="4om-eK-Ac8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U29-yn-5nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -108,9 +119,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMH-n4-3jP">
-                                <rect key="frame" x="162.5" y="685" width="89" height="48"/>
+                                <rect key="frame" x="155" y="685" width="104" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="START"/>
+                                <state key="normal" title="경마게임"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uqL-8a-kM6"/>
@@ -152,9 +163,6 @@
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		424C6197264F83560019A31E /* fingerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C6196264F83560019A31E /* fingerGameViewController.swift */; };
+		424C6197264F83560019A31E /* FingerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C6196264F83560019A31E /* FingerGameViewController.swift */; };
 		429160DE264E326D0072A2CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429160DD264E326D0072A2CF /* AppDelegate.swift */; };
 		429160E0264E326D0072A2CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429160DF264E326D0072A2CF /* SceneDelegate.swift */; };
 		429160E2264E326D0072A2CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429160E1264E326D0072A2CF /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		424C6196264F83560019A31E /* fingerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fingerGameViewController.swift; sourceTree = "<group>"; };
+		424C6196264F83560019A31E /* FingerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerGameViewController.swift; sourceTree = "<group>"; };
 		429160DA264E326D0072A2CF /* Drinking games App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drinking games App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		429160DD264E326D0072A2CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		429160DF264E326D0072A2CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				429160E6264E326E0072A2CF /* Assets.xcassets */,
 				429160E8264E326E0072A2CF /* LaunchScreen.storyboard */,
 				429160EB264E326E0072A2CF /* Info.plist */,
-				424C6196264F83560019A31E /* fingerGameViewController.swift */,
+				424C6196264F83560019A31E /* FingerGameViewController.swift */,
 			);
 			path = "Drinking games App";
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				424C6197264F83560019A31E /* fingerGameViewController.swift in Sources */,
+				424C6197264F83560019A31E /* FingerGameViewController.swift in Sources */,
 				429160E2264E326D0072A2CF /* ViewController.swift in Sources */,
 				429160DE264E326D0072A2CF /* AppDelegate.swift in Sources */,
 				429160E0264E326D0072A2CF /* SceneDelegate.swift in Sources */,
