@@ -19,20 +19,23 @@ class fingerGameViewController : UIViewController {
     @IBAction func touchUpInsideP1Button(){
         fingerGameSlider.value += 0.05
         
-    }
-    
-    @IBAction func touchUpInsideP2Button(){
-        fingerGameSlider.value -= 0.05
-    }
-    
-    @IBAction func didSliderValueChanged(_ sender : UISlider){
         if fingerGameSlider.value <= 0.51 {
             fingerGameSlider.thumbTintColor = UIColor(red: 0, green: 201/255, blue: 128/255, alpha: 1)
         }else if fingerGameSlider.value >= 0.49 {
             fingerGameSlider.thumbTintColor = UIColor(red: 255/255, green: 201/255, blue: 128/255, alpha: 1)
         }
-
     }
+    
+    @IBAction func touchUpInsideP2Button(){
+        fingerGameSlider.value -= 0.05
+        
+        if fingerGameSlider.value <= 0.51 {
+            fingerGameSlider.thumbTintColor = UIColor(red: 0, green: 201/255, blue: 128/255, alpha: 1)
+        }else if fingerGameSlider.value >= 0.49 {
+            fingerGameSlider.thumbTintColor = UIColor(red: 255/255, green: 201/255, blue: 128/255, alpha: 1)
+        }
+    }
+    
     
     
 }

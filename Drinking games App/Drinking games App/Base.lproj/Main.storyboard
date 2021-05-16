@@ -17,9 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7g-d0-Ydm">
-                                <rect key="frame" x="155" y="685" width="104" height="48"/>
+                                <rect key="frame" x="155" y="124" width="104" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="엄지게임"/>
+                                <state key="normal" title="엄지게임">
+                                    <color key="titleColor" red="0.52524447278911568" green="0.33006483843537415" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="GG6-0k-RDM" kind="presentation" modalPresentationStyle="fullScreen" id="7Od-m1-Y4j"/>
                                 </connections>
@@ -28,11 +30,11 @@
                         <viewLayoutGuide key="safeArea" id="BFf-1C-lHC"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="K7g-d0-Ydm" firstAttribute="top" secondItem="BFf-1C-lHC" secondAttribute="top" constant="80" id="FI6-iZ-NtP"/>
                             <constraint firstItem="K7g-d0-Ydm" firstAttribute="centerX" secondItem="fr4-NX-P3h" secondAttribute="centerX" id="FTc-bR-qp2"/>
-                            <constraint firstItem="BFf-1C-lHC" firstAttribute="bottom" secondItem="K7g-d0-Ydm" secondAttribute="bottom" constant="80" id="R6C-EC-36a"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="2인용" image="person.2.fill" catalog="system" id="p8P-pp-Qhg"/>
+                    <tabBarItem key="tabBarItem" title="2인용" image="person.2" catalog="system" id="p8P-pp-Qhg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dp5-2e-iwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +72,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-My-GiX">
                                 <rect key="frame" x="189.5" y="64" width="35" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="중단"/>
+                                <state key="normal" title="중단">
+                                    <color key="titleColor" red="0.52524447279999997" green="0.3300648384" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="stopGameAction" destination="GG6-0k-RDM" eventType="touchUpInside" id="8Gr-0u-85I"/>
                                 </connections>
@@ -79,10 +83,7 @@
                                 <rect key="frame" x="38" y="294" width="338" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.0" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="thumbTintColor" red="0.68869579081632648" green="0.82671662414965985" blue="0.58832908163265307" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="didSliderValueChanged:" destination="GG6-0k-RDM" eventType="valueChanged" id="Vv2-OS-0Zi"/>
-                                </connections>
+                                <color key="thumbTintColor" red="0.87058823529411766" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZsI-Le-TQI"/>
@@ -119,19 +120,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMH-n4-3jP">
-                                <rect key="frame" x="155" y="685" width="104" height="48"/>
+                                <rect key="frame" x="155" y="124" width="104" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="경마게임"/>
+                                <state key="normal" title="경마게임">
+                                    <color key="titleColor" red="0.52524447278911568" green="0.33006483843537415" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uqL-8a-kM6"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="nMH-n4-3jP" firstAttribute="top" secondItem="uqL-8a-kM6" secondAttribute="top" constant="80" id="iLl-Xs-4CK"/>
                             <constraint firstItem="nMH-n4-3jP" firstAttribute="centerX" secondItem="jn0-7l-yAB" secondAttribute="centerX" id="lTJ-Rh-IHB"/>
-                            <constraint firstItem="uqL-8a-kM6" firstAttribute="bottom" secondItem="nMH-n4-3jP" secondAttribute="bottom" constant="80" id="ryI-Fa-38s"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="다인용" image="person.3.fill" catalog="system" id="2bg-PI-0KA"/>
+                    <tabBarItem key="tabBarItem" title="다인용" image="person.3" catalog="system" id="2bg-PI-0KA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dc0-si-vGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,8 +162,8 @@
     </scenes>
     <resources>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
-        <image name="person.2.fill" catalog="system" width="128" height="80"/>
-        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
