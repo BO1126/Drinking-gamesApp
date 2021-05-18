@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="E3F-Qk-IZQ">
-                                <rect key="frame" x="38" y="294" width="338" height="31"/>
+                                <rect key="frame" x="38" y="300" width="338" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" red="0.0" green="0.78823529411764703" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="thumbTintColor" red="0.87058823529411766" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -92,7 +92,7 @@
                             <constraint firstItem="9yS-My-GiX" firstAttribute="top" secondItem="ZsI-Le-TQI" secondAttribute="top" constant="20" id="9e5-ye-Vrk"/>
                             <constraint firstItem="E3F-Qk-IZQ" firstAttribute="leading" secondItem="ZsI-Le-TQI" secondAttribute="leading" constant="40" id="Dqb-95-re5"/>
                             <constraint firstItem="ZsI-Le-TQI" firstAttribute="trailing" secondItem="2au-6M-YmM" secondAttribute="trailing" constant="40" id="DxA-A2-mdf"/>
-                            <constraint firstItem="E3F-Qk-IZQ" firstAttribute="top" secondItem="ZsI-Le-TQI" secondAttribute="top" constant="250" id="FCt-ef-hTG"/>
+                            <constraint firstItem="E3F-Qk-IZQ" firstAttribute="top" secondItem="9yS-My-GiX" secondAttribute="bottom" constant="200" id="Opg-7p-7Ul"/>
                             <constraint firstItem="ZsI-Le-TQI" firstAttribute="trailing" secondItem="E3F-Qk-IZQ" secondAttribute="trailing" constant="40" id="VYR-Hs-onC"/>
                             <constraint firstItem="RJp-jC-2pk" firstAttribute="leading" secondItem="ZsI-Le-TQI" secondAttribute="leading" constant="40" id="d3D-Hn-Kkm"/>
                             <constraint firstItem="ZsI-Le-TQI" firstAttribute="bottom" secondItem="RJp-jC-2pk" secondAttribute="bottom" constant="30" id="jw8-YW-dpk"/>
@@ -140,6 +140,21 @@
             </objects>
             <point key="canvasLocation" x="525" y="-306"/>
         </scene>
+        <!--TestVC-->
+        <scene sceneID="DsV-gF-8u9">
+            <objects>
+                <viewController id="Gcw-1q-KlM" customClass="TestVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeT-9C-PLV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gCz-gl-bje"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mct-qT-hEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="-329"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hos-cP-8JY">
             <objects>
@@ -164,6 +179,9 @@
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -12,6 +12,7 @@ class fingerGameViewController : UIViewController {
     @IBOutlet weak var playerTwoFingerButton : UIButton!
     @IBOutlet weak var fingerGameSlider : UISlider!
     
+    
     @IBAction func stopGameAction(){
         dismiss(animated: true)
     }
